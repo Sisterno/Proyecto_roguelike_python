@@ -22,8 +22,13 @@ if __name__=='__main__':
     if opcion=='M':
         # Abrir funciones de mapa
         print('esto va a poco')
-        m=mapa_o()
+        m=mapa_o(20,40,40)
         
         m.print_map()
 
-            
+        m.crear_caminos()
+
+        print('')
+
+        m.print_map()       
+                 
