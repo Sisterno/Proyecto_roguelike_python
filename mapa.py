@@ -16,11 +16,16 @@ def _get_ramdom():
 class mapa_o():
     # map_array [_window_height_max][_window_width_max]
     
-    def __init__(self,canti_max,x_max,y_max):
+    def __init__(self,canti_max,x_max,y_max,storage):
+        # asegurarse que se den los parametros correctos
+        # if(storage!=)
+        
+        
         self._window_height_max=x_max
         self._window_width_max=y_max
         self.max=canti_max
         self.map_forma=[]
+        self.storage=storage
         for i in range(self._window_height_max):
             self.map_forma.append(list())
             # linea=list()
@@ -79,6 +84,18 @@ class mapa_o():
         self.bot_ciego(self.max,centro_x,centro_y)
         pass
 
+
+class storage():
+
+    def __init__(self,max_casillas):
+        self.max_casillas=max_casillas
+        # super().__init__(*args, **kwargs)
+        pass
+
+    def funcname(self):
+        self.max_casillas-=1
+        # raise NotImplementedError
+        pass
     
 
         
